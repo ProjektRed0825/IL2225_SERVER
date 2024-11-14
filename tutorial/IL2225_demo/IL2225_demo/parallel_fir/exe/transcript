@@ -1,0 +1,153 @@
+# //  Questa Sim-64
+# //  Version 2023.4 linux_x86_64 Oct  9 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do ../tb/simulation.tcl
+# parallel_fir
+# 5us
+# ../syn/rpt
+# ../syn/db
+# ../rtl
+# ../syn
+# ../tb
+# types_and_constants.vhd rom_coefficients.vhd mac.vhd arithmetic_unit.vhd fsm.vhd shift_register.vhd parallel_fir.vhd {}
+# QuestaSim-64 vcom 2023.4 Compiler 2023.10 Oct  9 2023
+# Start time: 14:17:29 on Oct 31,2024
+# vcom -reportprogress 300 -2008 -work work ../rtl/types_and_constants.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling package types_and_constants
+# End time: 14:17:29 on Oct 31,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2023.4 Compiler 2023.10 Oct  9 2023
+# Start time: 14:17:29 on Oct 31,2024
+# vcom -reportprogress 300 -2008 -work work ../rtl/rom_coefficients.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types_and_constants
+# -- Compiling entity rom_coefficients
+# -- Compiling architecture behavior of rom_coefficients
+# End time: 14:17:30 on Oct 31,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2023.4 Compiler 2023.10 Oct  9 2023
+# Start time: 14:17:30 on Oct 31,2024
+# vcom -reportprogress 300 -2008 -work work ../rtl/mac.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types_and_constants
+# -- Compiling entity mac
+# -- Compiling architecture behaviour of mac
+# End time: 14:17:30 on Oct 31,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2023.4 Compiler 2023.10 Oct  9 2023
+# Start time: 14:17:30 on Oct 31,2024
+# vcom -reportprogress 300 -2008 -work work ../rtl/arithmetic_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types_and_constants
+# -- Compiling entity arithmetic_unit
+# -- Compiling architecture structure of arithmetic_unit
+# -- Loading entity mac
+# End time: 14:17:30 on Oct 31,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2023.4 Compiler 2023.10 Oct  9 2023
+# Start time: 14:17:30 on Oct 31,2024
+# vcom -reportprogress 300 -2008 -work work ../rtl/fsm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types_and_constants
+# -- Compiling entity FSM
+# -- Compiling architecture behavior of FSM
+# End time: 14:17:30 on Oct 31,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2023.4 Compiler 2023.10 Oct  9 2023
+# Start time: 14:17:30 on Oct 31,2024
+# vcom -reportprogress 300 -2008 -work work ../rtl/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types_and_constants
+# -- Compiling entity shift_register
+# -- Compiling architecture behaviour of shift_register
+# End time: 14:17:30 on Oct 31,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2023.4 Compiler 2023.10 Oct  9 2023
+# Start time: 14:17:30 on Oct 31,2024
+# vcom -reportprogress 300 -2008 -work work ../rtl/parallel_fir.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types_and_constants
+# -- Compiling entity parallel_fir
+# -- Compiling architecture structure of parallel_fir
+# -- Loading entity rom_coefficients
+# -- Loading entity shift_register
+# -- Loading entity FSM
+# -- Loading entity arithmetic_unit
+# End time: 14:17:30 on Oct 31,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2023.4 Compiler 2023.10 Oct  9 2023
+# Start time: 14:17:30 on Oct 31,2024
+# vcom -reportprogress 300 -2008 -work work ../tb/parallel_fir_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types_and_constants
+# -- Compiling entity parallel_fir_tb
+# -- Compiling architecture behavior of parallel_fir_tb
+# -- Loading entity parallel_fir
+# End time: 14:17:30 on Oct 31,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.parallel_fir_tb 
+# Start time: 14:17:30 on Oct 31,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.types_and_constants
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ns  Iteration: 0  Region: /types_and_constants File: ../rtl/types_and_constants.vhd
+# Loading work.parallel_fir_tb(behavior)#1
+# Loading work.parallel_fir(structure)#1
+# Loading work.rom_coefficients(behavior)#1
+# Loading work.shift_register(behaviour)#1
+# Loading work.fsm(behavior)#1
+# Loading work.arithmetic_unit(structure)#1
+# Loading work.mac(behaviour)#1
+# 0 ns
+# 1 us
+# End time: 14:22:02 on Oct 31,2024, Elapsed time: 0:04:32
+# Errors: 0, Warnings: 1
